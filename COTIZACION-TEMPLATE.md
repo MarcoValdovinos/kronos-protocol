@@ -1,4 +1,0 @@
-# COTIZACION ARKHE ZERO - PROTOCOLO VIVO
-# Folio: 11:22-20261020-e8d9eac8
-# Validez: 7 días
-...

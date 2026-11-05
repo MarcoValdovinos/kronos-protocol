@@ -1,9 +1,0 @@
-{
-  "mcpServers": {
-    "arkhe-zero": {
-      "command": "python",
-      "args": ["arkhe_server.py"],
-      "env": {}
-    }
-  }
-}
