@@ -27,3 +27,12 @@ Salida esperada: ✅ TEST PASADO: El núcleo criptográfico es determinista y se
 · Tesis Doctoral
 · Servidor MCP en Producción
   EOF
+
+---
+## Aclaraciones Técnicas y de Cumplimiento (v1.0.0)
+
+### 1. Alineación con NOM-151 y LFDA
+Este sistema está **diseñado para alinearse** con los principios de conservación de mensajes de datos de la NOM-151-SCFI-2016, utilizando hashes SHA-256 y sellos de tiempo. Sin embargo, la emisión de constancias con validez legal oficial requiere la intervención de un **Prestador de Servicios de Certificación (PSC)** debidamente acreditado por la Secretaría de Economía. KRONOS actúa como la herramienta técnica de generación y verificación de evidencia.
+
+### 2. Gobernanza 51/49
+La proporción 51% (humano) / 49% (IA) es una **regla de configuración algorítmica** implementada para el balanceo de pesos en la toma de decisiones del sistema. No constituye un mecanismo de medición de autoría real ni una regla jurídica general, sino un parámetro de diseño interno del protocolo.
