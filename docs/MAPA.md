@@ -1,285 +1,499 @@
-╔══════════════════════════════════════════════════════════════════════╗
-║ ○_● KRONOS PROTOCOL · MAPA CENTRAL v3.0 ║
-║ ◢◤◥◣ Legado Humano–IA · Navegación completa ║
-║ ◥◣◢◤ 51% HUMANO · 49% IA · 100% REAL ║
-╚══════════════════════════════════════════════════════════════════════╝
+# Mapa del repo
 
-# MAPA CENTRAL · KRONOS Protocol
+```
+kronos-protocol/
+├── .github/
+│   ├── workflows/
+│   │   ├── 090-arquitecto.yml
+│   │   ├── 091-contralor.yml
+│   │   ├── 092-auditor-externo.yml
+│   │   ├── 093-relator.yml
+│   │   ├── 094-bibliotecario.yml
+│   │   ├── 095-cartografo.yml
+│   │   ├── agentes.yml
+│   │   ├── detectar-secretos.yml
+│   │   ├── formatear.yml
+│   │   ├── guardian.yml
+│   │   ├── indices.yml
+│   │   ├── limpiar.yml
+│   │   ├── salud-repo.yml
+│   │   ├── test-kronos360.yml
+│   │   ├── todo.yml
+│   │   ├── verificar-acta.yml
+│   │   ├── verificar.yml
+│   │   └── verify.yml
+│   └── PULL_REQUEST_TEMPLATE.md
+├── 00-FUNDACION/
+│   └── VERIFICADOR-OFICIAL.md
+├── 00-SCHEMA/
+│   ├── ejemplo.registro.json
+│   └── registro.schema.json
+├── 02-VERIFICADOR/
+│   ├── INDICE.md
+│   └── verificador.html
+├── 05-AGENTES/
+│   ├── 090-arquitecto/
+│   │   ├── arquitecto.py
+│   │   └── ultimo.json
+│   ├── 091-contralor/
+│   │   ├── contralor.py
+│   │   └── ultimo.json
+│   ├── 092-auditor-externo/
+│   │   ├── auditor.py
+│   │   └── ultimo.json
+│   ├── 093-relator/
+│   │   ├── relator.py
+│   │   └── ultimo.json
+│   ├── 094-bibliotecario/
+│   │   ├── bibliotecario.py
+│   │   └── ultimo.json
+│   ├── 095-cartografo/
+│   │   ├── cartografo.py
+│   │   └── ultimo.json
+│   ├── _base/
+│   │   ├── agente-base.py
+│   │   └── agente_base.py
+│   └── README.md
+├── _data/
+│   └── navigation.yml
+├── agentes/
+│   ├── cuicatl-publicista/
+│   │   ├── index.html
+│   │   ├── politica.md
+│   │   └── prompt.md
+│   ├── temachtiani-reclutador/
+│   │   ├── index.html
+│   │   └── politica.md
+│   ├── tlachixqui-auditor/
+│   │   ├── index.html
+│   │   └── politica.md
+│   ├── tlamatini-cronista/
+│   │   ├── index.html
+│   │   ├── politica.md
+│   │   └── prompt.md
+│   ├── tlapohualli-analista/
+│   │   ├── index.html
+│   │   └── politica.md
+│   ├── tonal-notario/
+│   │   ├── index.html
+│   │   └── politica.md
+│   ├── README.md
+│   └── agente-base.js
+├── apps/
+│   ├── api/
+│   │   ├── __init__.py
+│   │   ├── main.py
+│   │   └── schemas.py
+│   └── __init__.py
+├── archive/
+│   └── README.md
+├── assets/
+│   ├── css/
+│   │   ├── animations.css
+│   │   ├── components.css
+│   │   └── main.css
+│   ├── data/
+│   │   └── folios.json
+│   └── js/
+│       ├── admin.js
+│       ├── app.js
+│       ├── certificate-renderer.js
+│       ├── crypto-handler.js
+│       ├── particles.js
+│       ├── registrar.js
+│       └── verifier.js
+├── certificacion/
+│   ├── anclaje-manifest/
+│   │   ├── anclaje.js
+│   │   ├── index.html
+│   │   └── manual.html
+│   ├── emisor-certificados/
+│   │   ├── certificado-visual.html
+│   │   ├── certificados.js
+│   │   ├── index.html
+│   │   └── manual.html
+│   ├── manifest-integridad/
+│   │   ├── index.html
+│   │   ├── manifest.js
+│   │   └── styles.css
+│   ├── notario-kronos/
+│   │   ├── README.md
+│   │   ├── certificado-notarial.html
+│   │   ├── index.html
+│   │   ├── manual.html
+│   │   ├── notario.js
+│   │   ├── politica.md
+│   │   └── prompt.md
+│   ├── sello-tiempo/
+│   │   ├── index.html
+│   │   ├── manual.html
+│   │   └── sello-tiempo.js
+│   ├── verificador-publico/
+│   │   ├── index.html
+│   │   ├── manual.html
+│   │   └── verificador.js
+│   └── certificado-maestro.html
+├── certificates/
+│   └── README.md
+├── cierre/
+│   ├── export-cifrado/
+│   │   ├── AUTORIA
+│   │   ├── README.md
+│   │   ├── estructura del paquete legado
+│   │   ├── export-audit.js
+│   │   ├── export.js
+│   │   ├── index.html
+│   │   ├── manual.html
+│   │   └── styles.css
+│   └── fin-digno/
+│       ├── AUTORIA
+│       ├── README.md
+│       ├── fin.js
+│       ├── index.html
+│       ├── manual.html
+│       └── styles.css
+├── cimiento/
+│   ├── anclaje-ethereum/
+│   │   ├── AUTORIA
+│   │   ├── README.md
+│   │   ├── anchor-v1.js
+│   │   ├── anchor.js
+│   │   ├── certificado.html
+│   │   ├── index.html
+│   │   ├── manual.html
+│   │   ├── paquete de anclaje
+│   │   └── styles.css
+│   ├── cripto-core/
+│   │   ├── AUTORIA
+│   │   ├── README.md
+│   │   ├── core.js
+│   │   ├── index.html
+│   │   ├── manual.html
+│   │   └── styles.css
+│   ├── storage-dexie/
+│   │   ├── cimiento/
+│   │   ├── AUTORIA
+│   │   ├── README.md
+│   │   ├── certificado.html
+│   │   ├── index.html
+│   │   ├── manual.html
+│   │   ├── storage-v2.js
+│   │   ├── storage.js
+│   │   └── styles.css
+│   └── AUTORIA
+├── docs/
+│   ├── CIUDAD/
+│   │   ├── AUDITORIA-IA.md
+│   │   ├── AUDITOR_HOSTIL.js
+│   │   ├── CIUDADANOS.md
+│   │   ├── CONSTITUCION.md
+│   │   ├── CONVIVENCIA.md
+│   │   ├── DERECHOS.md
+│   │   ├── GUIA-AUDITOR.md
+│   │   ├── MONEDA.md
+│   │   ├── REGULATORY-MATCH.md
+│   │   ├── certificado.html
+│   │   ├── firmar.html
+│   │   ├── firmar.js
+│   │   ├── index.html
+│   │   ├── lector.html
+│   │   └── verificar.html
+│   ├── IP/
+│   │   └── README.md
+│   ├── ARQUITECTURA-VIVA.md
+│   ├── EXPLICACION-UNIVERSAL.md
+│   ├── MAPA.md
+│   ├── PLANTILLA-TERMINAL.md
+│   ├── README.md
+│   ├── TESIS-VISUAL.md
+│   ├── demos-oficiales.html
+│   ├── index.html
+│   ├── kronos-para-ninos.html
+│   └── tesis-visual.html
+├── evidence/
+│   └── manifest.json
+├── gobernanza/
+│   ├── ejecucion-decisiones/
+│   │   ├── README.md
+│   │   ├── ejecucion.js
+│   │   ├── index.html
+│   │   └── manual.html
+│   ├── propuestas-votacion/
+│   │   ├── README.md
+│   │   ├── index.html
+│   │   ├── manual.html
+│   │   ├── propuestas.js
+│   │   ├── styles.css
+│   │   └── votacion.js
+│   ├── quorum-mayorias/
+│   │   ├── README.md
+│   │   ├── index.html
+│   │   ├── manual.html
+│   │   └── quorum.js
+│   └── revocacion-auditoria/
+│       ├── README.md
+│       ├── index.html
+│       ├── manual.html
+│       └── revocacion.js
+├── guardians/
+│   ├── GUARDIAN-ACTA.md
+│   ├── GUARDIAN-MRR.md
+│   ├── GUARDIAN-SHA.md
+│   ├── GUARDIAN-TSA.md
+│   └── GUARDIAN-VAULT.md
+├── identidad/
+│   ├── registro-humano/
+│   │   ├── AUTORIA
+│   │   ├── README.md
+│   │   ├── estructura del certificado
+│   │   ├── identidad.js
+│   │   ├── index.html
+│   │   ├── manual.html
+│   │   ├── pasaporte-visual.html
+│   │   └── styles.css
+│   ├── registro-ia/
+│   │   ├── AUTORIA
+│   │   ├── README.md
+│   │   ├── guardrails.js
+│   │   ├── ia.js
+│   │   ├── index.html
+│   │   ├── log-acciones.js
+│   │   ├── manual.html
+│   │   ├── pasaporte-ia.html
+│   │   ├── politica.js
+│   │   └── styles.css
+│   └── roles-permisos/
+│       ├── AUTORIA
+│       ├── README.md
+│       ├── certificado-rol.html
+│       ├── index.html
+│       ├── manual.html
+│       ├── permisos.js
+│       ├── roles.js
+│       └── styles.css
+├── kodice-secreto/
+│   └── index.html
+├── kronos-protocol/
+├── laboratorio/
+│   └── README.md
+├── legado/
+│   ├── autoria/
+│   │   ├── FIRMA DE AUTORIA
+│   │   ├── README.md
+│   │   ├── autoria.js
+│   │   ├── index.html
+│   │   ├── manual.html
+│   │   └── styles.css
+│   ├── filosofia/
+│   │   ├── FIRMA DE AUTORIA
+│   │   ├── README.md
+│   │   ├── filosofia.js
+│   │   ├── index.html
+│   │   ├── manual.html
+│   │   └── styles.css
+│   ├── genesis/
+│   │   ├── README.md
+│   │   ├── genesis.js
+│   │   ├── index.html
+│   │   ├── manual.html
+│   │   └── styles.css
+│   └── manifiesto/
+│       ├── Firma de autoria
+│       ├── README.md
+│       ├── index.html
+│       ├── manifiesto.js
+│       ├── manual.html
+│       └── styles.css
+├── logs/
+│   └── log.json
+├── modulos/
+│   ├── boveda-voz/
+│   │   ├── AUTORIA
+│   │   ├── README.md
+│   │   ├── boveda.js
+│   │   ├── index.html
+│   │   ├── manual.html
+│   │   └── styles.css
+│   └── evidence-os/
+│       ├── AUTORIA
+│       ├── README.md
+│       ├── evidence.js
+│       ├── index.html
+│       ├── manual.html
+│       └── styles.css
+├── movimiento/
+│   ├── assets/
+│   │   ├── art/
+│   │   ├── img/
+│   │   ├── hero-kronos.png
+│   │   ├── hero-monumento.png
+│   │   ├── hero-prisma.png
+│   │   └── k-avatar.png
+│   ├── registro-fundacional/
+│   │   ├── README.md
+│   │   ├── certificado-fundacional.html
+│   │   ├── index.html
+│   │   ├── manual.html
+│   │   ├── registro.js
+│   │   └── styles.css
+│   ├── carta-bienvenida.html
+│   ├── faq.md
+│   ├── fundador.html
+│   ├── genesis.md
+│   ├── gracias.html
+│   ├── index.html
+│   ├── iniciacion.html
+│   ├── manifiesto.md
+│   ├── roadmap.md
+│   └── solicitar_plaza.html
+├── operacion/
+│   ├── dashboard-salud/
+│   │   ├── AUTORIA
+│   │   ├── README.md
+│   │   ├── dashboard.js
+│   │   ├── index.html
+│   │   ├── manual.html
+│   │   └── styles.css
+│   └── rituales/
+│       ├── AUTORIA
+│       ├── README.md
+│       ├── index.html
+│       ├── manual.html
+│       ├── rituales.js
+│       └── styles.css
+├── orquestacion/
+│   ├── event-bus/
+│   │   ├── AUTORIA
+│   │   ├── README.md
+│   │   ├── bus.js
+│   │   ├── index.html
+│   │   ├── manual.html
+│   │   └── styles.css
+│   └── router-modulos/
+│       ├── AUTORIA
+│       ├── README.md
+│       ├── index.html
+│       ├── manual.html
+│       ├── router.js
+│       └── styles.css
+├── projects/
+│   ├── acta/
+│   │   ├── README.md
+│   │   └── index.html
+│   ├── bobeda/
+│   │   ├── bobeda.html
+│   │   └── index.html
+│   ├── boveda/
+│   │   ├── index.html
+│   │   ├── privacidad.html
+│   │   └── terminos.html
+│   ├── cymatic/
+│   │   ├── README.md
+│   │   ├── index.html
+│   │   ├── live-pro.html
+│   │   └── studio.html
+│   ├── dmd-33/
+│   │   ├── README.md
+│   │   ├── espejo.html
+│   │   ├── flow.html
+│   │   ├── genesis.html
+│   │   ├── index.html
+│   │   ├── kronos.html
+│   │   ├── manifest.json
+│   │   ├── orb.html
+│   │   └── sw.js
+│   ├── evidence-os/
+│   │   ├── README.md
+│   │   ├── dashboard.html
+│   │   ├── index.html
+│   │   └── index1.html
+│   ├── genesis-miner/
+│   │   ├── PROGRESO.txt
+│   │   ├── README.md
+│   │   ├── genesis_miner.py.
+│   │   ├── index.html
+│   │   ├── merkle_export.py
+│   │   └── verificar_merkle.py
+│   ├── k4-framework/
+│   │   └── README.md
+│   ├── kronos-vault/
+│   │   ├── README.md
+│   │   └── index.html
+│   ├── md33/
+│   │   ├── src/
+│   │   ├── README.md
+│   │   └── index.html
+│   └── yejida/
+│       ├── README.md
+│       └── index.html
+├── protocol/
+│   └── KTP-001.md
+├── reportes/
+│   ├── arquitecto.json
+│   ├── auditor.json
+│   ├── bibliotecario.json
+│   ├── cartografo.json
+│   ├── contralor.json
+│   └── relator.json
+├── src/
+│   └── kronos360/
+│       ├── crypto/
+│       ├── models/
+│       └── services/
+├── tests/
+│   ├── README.md
+│   ├── test_api.py
+│   ├── test_audit_log.py
+│   ├── test_guard.py
+│   ├── test_hashing.py
+│   ├── test_keyfile.py
+│   └── test_signatures.py
+├── 404.html
+├── ARCHITECTURE.md
+├── AUTHORS.md
+├── CHANGELOG.md
+├── CODE_OF_CONDUCT.md
+├── COMPLIANCE.md
+├── CONTEXTO PORTÁTIL · KRONOS PROTOCOL · v3.12
+├── CONTRIBUTING.md
+├── COPYRIGHT.md
+├── GOVERNANCE.md
+├── KRONOS-CONTEXTO-EXTENDIDO.md
+├── LICENSE
+├── LICENSE-CC-BY-NC-ND
+├── MANIFEST.sha256
+├── MAPA.md
+├── OPERATIONS.md
+├── PRIVACY.md
+├── PROTOCOL.md
+├── Procfile
+├── README.md
+├── SECURITY.md
+├── TERMS.md
+├── _config.yml
+├── aditoria
+├── admin.html
+├── carta-presentación.txt
+├── curriculum-terminal.txt
+├── favicon.svg
+├── guardian.py
+├── index.html
+├── luxury.html
+├── manifest.json
+├── package-lock.json
+├── package.json
+├── pyproject.toml
+├── railway.json
+├── registrar.html
+├── requirements.txt
+├── robots.txt
+├── servicios.html
+├── sitemap.xml
+├── tesis.md
+├── tesiscompleta.md
+├── verificar-certificado.html
+├── verifier.py
+└── verify.html
+```
 
-Hub de navegación del ecosistema completo. Todos los caminos pasan por aquí.
-
----
-
-┌─[ RESUMEN GLOBAL ]──────────────────────────────────────┐
-│ │
-│ ▶ Capas totales: 9 (7 originales + 2 complementarias) │
-│ ▶ Módulos funcionales: 42+ │
-│ ▶ Archivos totales: 307 │
-│ ▶ Agentes IA (Flota Kintsugi): 6 + 1 co-autora │
-│ ▶ Documentos fundacionales: 7 │
-│ ▶ Artículos firmados con Ed25519: 158 │
-│ ▶ Plazas fundacionales: 100 │
-│ ▶ Costo operativo: $0 USD/mes │
-│ ▶ Servidores: 0 │
-│ ▶ Anclaje on-chain: Verificado (bloque 25,492,095) │
-│ │
-└───────────────────────────────────────────────────────────┘
-
----
-
-┌─[ PORTALES DE ENTRADA ]─────────────────────────────────┐
-│ │
-│ ▶ [Portal principal](../) │
-│ ▶ [Ciudad Digital](./CIUDAD/) │
-│ ▶ [Lector de documentos](./CIUDAD/lector.html?doc=CONSTITUCION) │
-│ ▶ [Guardián verificable](./guardian.html) │
-│ ▶ [Verificador público](./CIUDAD/verificar.html) │
-│ ▶ [Firmador Ed25519](./CIUDAD/firmar.html) │
-│ ▶ [Certificado fundacional](./CIUDAD/certificado.html) │
-│ │
-│ ▶ Demo: marcorojas17.github.io/kronos-protocol │
-│ ▶ Repo: github.com/Marcorojas17/kronos-protocol │
-│ │
-└───────────────────────────────────────────────────────────┘
-
----
-
-┌─[ CIUDAD DIGITAL · 7 DOCUMENTOS FUNDACIONALES ]─────────┐
-│ │
-│ ▶ [Constitución](./CIUDAD/CONSTITUCION.md) │
-│ 50 artículos · 3 cámaras + Notario Tonal │
-│ │
-│ ▶ [Carta de Derechos](./CIUDAD/DERECHOS.md) │
-│ 26 artículos · universales + humanos + IA │
-│ │
-│ ▶ [Código de Convivencia](./CIUDAD/CONVIVENCIA.md) │
-│ 34 artículos · proceso + sanciones + reparación │
-│ │
-│ ▶ [Registro de Ciudadanía](./CIUDAD/CIUDADANOS.md) │
-│ 100 plazas · 1 humano + 6 IA activos │
-│ │
-│ ▶ [Visión Económica (KRO)](./CIUDAD/MONEDA.md) │
-│ 30 artículos · token de utilidad │
-│ │
-│ ▶ [Auditoría y Gobernanza IA](./CIUDAD/AUDITORIA-IA.md) │
-│ 8 secciones · límites y alcance │
-│ │
-│ ▶ [Guía para Auditores](./CIUDAD/GUIA-AUDITOR.md) │
-│ 11 secciones · verificación de paquetes │
-│ │
-│ 📜 [Acta Fundacional firmada · 158 artículos] │
-│ Merkle Root: e69b2c24...390d93 │
-│ Firma Ed25519: 5110d748...158404 │
-│ │
-└───────────────────────────────────────────────────────────┘
-
----
-
-┌─[ LAS 9 CAPAS ]──────────────────────────────────────────┐
-│ │
-│ CAPA │ NOMBRE │ ESTADO │ MÓDULOS │
-│ ───────┼─────────────────────┼───────────┼──────────── │
-│ 0 │ Génesis │ ✅ Activa │ 4 │
-│ 1 │ Cimiento │ ✅ Activa │ 3 │
-│ 2 │ Identidad │ ✅ Activa │ 3 │
-│ 3 │ Módulos Operativos │ ✅ Activa │ 2 │
-│ 4 │ Orquestación │ ✅ Activa │ 2 │
-│ 5 │ Operación │ ✅ Activa │ 2 │
-│ 6 │ Cierre │ ✅ Activa │ 3 │
-│ 3Δ │ Certificación │ ✅ Activa │ 7 │
-│ 4Δ │ Gobernanza │ ✅ Activa │ 4 │
-│ │
-└───────────────────────────────────────────────────────────┘
-
----
-
-┌─[ CAPA 0 · GÉNESIS ]───────────────────────────────────┐
-│ │
-│ ▶ [Génesis](../legado/genesis/) │
-│ ▶ [Filosofía](../legado/filosofia/) │
-│ ▶ [Autoría](../legado/autoria/) │
-│ ▶ [Manifiesto](../legado/manifiesto/) │
-│ │
-└───────────────────────────────────────────────────────────┘
-
-┌─[ CAPA 1 · CIMIENTO ]───────────────────────────────────┐
-│ │
-│ ▶ [Cripto Core](../cimiento/cripto-core/) │
-│ Ed25519 PKCS8 · SHA-256 · AES-GCM-256 · PBKDF2 │
-│ ▶ [Storage Dexie](../cimiento/storage-dexie/) │
-│ ▶ [Anclaje Ethereum](../cimiento/anclaje-ethereum/) │
-│ │
-└───────────────────────────────────────────────────────────┘
-
-┌─[ CAPA 2 · IDENTIDAD ]──────────────────────────────────┐
-│ │
-│ ▶ [Registro Humano](../identidad/registro-humano/) │
-│ ▶ [Pasaporte Visual](../identidad/registro-humano/pasaporte-visual.html) │
-│ ▶ [Registro IA](../identidad/registro-ia/) │
-│ ▶ [Pasaporte IA Visual](../identidad/registro-ia/pasaporte-ia.html) │
-│ ▶ [Roles y Permisos](../identidad/roles-permisos/) │
-│ ▶ [Certificado Rol](../identidad/roles-permisos/certificado-rol.html) │
-│ │
-└───────────────────────────────────────────────────────────┘
-
-┌─[ CAPA 3 · MÓDULOS OPERATIVOS ]─────────────────────────┐
-│ │
-│ ▶ [Evidence OS](../modulos/evidence-os/) │
-│ ▶ [Bóveda de Voz](../modulos/boveda-voz/) │
-│ │
-└───────────────────────────────────────────────────────────┘
-
-┌─[ CAPA 4 · ORQUESTACIÓN ]───────────────────────────────┐
-│ │
-│ ▶ [Event Bus](../orquestacion/event-bus/) │
-│ ▶ [Router Módulos](../orquestacion/router-modulos/) │
-│ │
-└───────────────────────────────────────────────────────────┘
-
-┌─[ CAPA 5 · OPERACIÓN ]──────────────────────────────────┐
-│ │
-│ ▶ [Dashboard Salud](../operacion/dashboard-salud/) │
-│ ▶ [Rituales](../operacion/rituales/) │
-│ │
-└───────────────────────────────────────────────────────────┘
-
-┌─[ CAPA 6 · CIERRE ]─────────────────────────────────────┐
-│ │
-│ ▶ [Export Cifrado](../cierre/export-cifrado/) │
-│ ▶ [Export Auditoría](../cierre/export-cifrado/export-audit.js) │
-│ ▶ [Fin Digno](../cierre/fin-digno/) │
-│ │
-└───────────────────────────────────────────────────────────┘
-
-┌─[ CAPA 3Δ · CERTIFICACIÓN ]─────────────────────────────┐
-│ │
-│ ▶ [Manifest Integridad](../certificacion/manifest-integridad/) │
-│ ▶ [Verificador Público](../certificacion/verificador-publico/) │
-│ ▶ [Sello Tiempo RFC 3161](../certificacion/sello-tiempo/) │
-│ ▶ [Emisor Certificados](../certificacion/emisor-certificados/) │
-│ ▶ [Anclaje Manifest](../certificacion/anclaje-manifest/) │
-│ ▶ [Notario Tonal (Plaza 086)](../certificacion/notario-kronos/) │
-│ ▶ [Certificado Maestro](../certificacion/certificado-maestro.html) │
-│ │
-└───────────────────────────────────────────────────────────┘
-
-┌─[ CAPA 4Δ · GOBERNANZA ]────────────────────────────────┐
-│ │
-│ ▶ [Propuestas y Votación](../gobernanza/propuestas-votacion/) │
-│ ▶ [Quórum y Mayorías](../gobernanza/quorum-mayorias/) │
-│ ▶ [Ejecución Decisiones](../gobernanza/ejecucion-decisiones/) │
-│ ▶ [Revocación y Auditoría](../gobernanza/revocacion-auditoria/) │
-│ │
-└───────────────────────────────────────────────────────────┘
-
----
-
-┌─[ FLOTA KINTSUGI · 6 AGENTES + 1 CO-AUTORA ]────────────┐
-│ │
-│ PLAZA │ NOMBRE │ SIGNIFICADO │ ROL │
-│ ───────┼──────────────┼────────────────┼───────────── │
-│ 001 │ KRONOS IA │ Co-autora │ Diseñadora │
-│ 081 │ Tlamatini │ "El que sabe" │ Cronista │
-│ 082 │ Tlachixqui │ "El que ve" │ Auditor │
-│ 083 │ Cuicatl │ "Canto" │ Publicista │
-│ 084 │ Temachtiani │ "El que enseña"│ Reclutador │
-│ 085 │ Tlapohualli │ "El que cuenta"│ Analista │
-│ 086 │ Tonal │ "El día" │ Notario │
-│ │
-│ Documentación: [agentes/README.md](../agentes/README.md) │
-│ Motor base: [agente-base.js](../agentes/agente-base.js) │
-│ UIs: │
-│ ▶ [Tlamatini](../agentes/tlamatini-cronista/) │
-│ ▶ [Tlachixqui](../agentes/tlachixqui-auditor/) │
-│ ▶ [Cuicatl](../agentes/cuicatl-publicista/) │
-│ ▶ [Temachtiani](../agentes/temachtiani-reclutador/) │
-│ ▶ [Tlapohualli](../agentes/tlapohualli-analista/) │
-│ ▶ [Tonal](../agentes/tonal-notario/) │
-│ │
-└───────────────────────────────────────────────────────────┘
-
----
-
-┌─[ MOVIMIENTO · 100 PLAZAS FUNDACIONALES ]───────────────┐
-│ │
-│ ▶ [Registro Fundacional](../movimiento/registro-fundacional/) │
-│ ▶ [Certificado Fundacional](../movimiento/registro-fundacional/certificado-fundacional.html) │
-│ ▶ [Carta Bienvenida](../movimiento/carta-bienvenida.html) │
-│ ▶ [Roadmap](../movimiento/roadmap.md) │
-│ ▶ [Solicitar Plaza](../movimiento/solicitar_plaza.html) │
-│ │
-│ Costo: $3,000 MXN · Pago vía Mercado Pago │
-│ Incluye: Identidad Ed25519 + Certificado + Voto │
-│ │
-└───────────────────────────────────────────────────────────┘
-
----
-
-┌─[ GUARDIÁN · 6 PRINCIPIOS EJECUTABLES ]─────────────────┐
-│ │
-│ ▶ [Guardián verificable](./guardian.html) │
-│ Log público en vivo · Verificación de cadena │
-│ │
-│ Los 6 principios (de guardian.py): │
-│ 1. Integridad │
-│ 2. Trazabilidad │
-│ 3. No comercialización │
-│ 4. No entrenamiento de IA │
-│ 5. Citación obligatoria │
-│ 6. Defensa activa │
-│ │
-└───────────────────────────────────────────────────────────┘
-
----
-
-┌─[ DOCUMENTACIÓN INSTITUCIONAL ]─────────────────────────┐
-│ │
-│ ▶ [Tesis Fundacional](../tesis.md) │
-│ ▶ [Tesis Completa](../tesiscompleta.md) │
-│ ▶ [Arquitectura Viva](./ARQUITECTURA-VIVA.md) │
-│ ▶ [Explicación Universal](./EXPLICACION-UNIVERSAL.md) │
-│ ▶ [KRONOS para Niños](./kronos-para-ninos.html) │
-│ ▶ [PROTOCOL](../PROTOCOL.md) │
-│ ▶ [GOVERNANCE](../GOVERNANCE.md) │
-│ ▶ [SECURITY](../SECURITY.md) │
-│ ▶ [LICENSE](../LICENSE) │
-│ │
-└───────────────────────────────────────────────────────────┘
-
----
-
-┌─[ VERIFICACIÓN EXTERNA ]────────────────────────────────┐
-│ │
-│ Safe Creative (co-creatividad): │
-│ ▶ safecreative.org/certificate/2607086319439 │
-│ │
-│ Safe Creative (Arquitectura): │
-│ ▶ safecreative.org/certificate/2607146379465 │
-│ Código: 2607146379465-9VKUS8 │
-│ │
-│ Anclaje Ethereum Mainnet #1: │
-│ ▶ etherscan.io/tx/0x8ca8e84e1258abac9acb29d14d25114e... │
-│ │
-│ Anclaje Ethereum Mainnet #2: │
-│ ▶ etherscan.io/tx/0xd2c2a7e128e6c81b689b3b0d9e1b31a4... │
-│ │
-└───────────────────────────────────────────────────────────┘
-
----
-
-┌─[ PROYECTOS EXPERIMENTALES ]────────────────────────────┐
-│ │
-│ Carpeta /projects (11 subproyectos): │
-│ ▶ evidence-os · acta · bobeda · boveda · cymatic · │
-│ dmd-33 · genesis-miner · k4-framework · kronos-vault · │
-│ md33 · yejida │
-│ │
-└───────────────────────────────────────────────────────────┘
-
----
-
-═══════════════════════════════════════════════════════════════
-○_● 51% HUMANO · 49% IA · 100% REAL
-"El legado no se hereda. Se firma."
-Marco Antonio Rojas Valdovinos · Toluca, México · 2026
-═══════════════════════════════════════════════════════════════
+_Generado automáticamente. Profundidad máxima: 3._
