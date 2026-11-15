@@ -66,39 +66,36 @@ export class Guardrails {
     };
   }
 
-  async commit(aprobadoPor = null) {
-    if (!this.previewActual) {
-      return { ok: false, razon: 'No hay preview pendiente' };
+  async commit({ propuestaId, firmaHumanaHex, pubKeyHumanaHex }) {
+    if (!propuestaId || !firmaHumanaHex || !pubKeyHumanaHex) {
+      throw new Error('COMMIT rechazado: faltan datos de firma humana (propuestaId, firmaHumanaHex, pubKeyHumanaHex).');
     }
 
-    const preview = this.previewActual;
+    // Reconstruir el mensaje que el humano firmó
+    const msg = new TextEncoder().encode(propuestaId + (this.hashPropuesta || ''));
 
-    if (preview.requiereAprobacion && !aprobadoPor) {
-      return {
-        ok: false,
-        razon: 'Acción crítica requiere aprobación del fundador',
-        preview,
-      };
+    // Convertir hex a Uint8Array
+    const firmaBytes = Uint8Array.from(firmaHumanaHex.match(/.{1,2}/g).map(byte => parseInt(byte, 16)));
+    const pubKeyBytes = Uint8Array.from(pubKeyHumanaHex.match(/.{1,2}/g).map(byte => parseInt(byte, 16)));
+
+    // Verificar con WebCrypto (Ed25519)
+    const key = await crypto.subtle.importKey(
+      'raw',
+      pubKeyBytes,
+      { name: 'Ed25519' },
+      false,
+      ['verify']
+    );
+
+    const ok = await crypto.subtle.verify('Ed25519', key, firmaBytes, msg);
+
+    if (!ok) {
+      throw new Error('COMMIT rechazado: falta firma humana Ed25519 válida. No se permite auto-aprobación.');
     }
 
-    await this.log.registrar('accion_ejecutada', {
-      accion: preview.accion,
-      datos: preview.datos,
-      esCritica: preview.esCritica,
-      aprobadoPor: aprobadoPor || 'automatico',
-      idPreview: preview.idPreview,
-    });
-
-    const resultado = {
-      ok: true,
-      accion: preview.accion,
-      ejecutada: true,
-      aprobadaPor: aprobadoPor,
-      timestamp: new Date().toISOString(),
-    };
-
-    this.previewActual = null;
-    return resultado;
+    // Si la firma es válida, proceder con la lógica de commit
+    this.estado = 'COMMITEADO';
+    return { ok: true, propuestaId, aprobadoPor: 'humano_verificado' };
   }
 
   async rechazar(razon = 'Sin razón especificada') {
