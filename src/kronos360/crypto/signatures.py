@@ -7,6 +7,8 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """Firmas digitales con domain separation.
 
 Cada firma incluye un prefijo de dominio que liga el mensaje al protocolo,
@@ -14,7 +16,6 @@ version y algoritmo. Esto evita que una firma valida para un contexto
 se reutilice en otro (ataque de sustitucion/stripping).
 """
 
-from __future__ import annotations
 
 from typing import Protocol
 

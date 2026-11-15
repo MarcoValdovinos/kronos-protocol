@@ -7,9 +7,10 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """Hash primario del sistema: SHA3-512."""
 
-from __future__ import annotations
 
 import hashlib
 

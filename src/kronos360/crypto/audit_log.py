@@ -7,6 +7,8 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """Registro de auditoría estructurado en JSONL.
 
 Reglas de seguridad:
@@ -17,7 +19,6 @@ Reglas de seguridad:
 
 Creado por: Marco Antonio Rojas Valdovinos (#000)
 """
-from __future__ import annotations
 
 import hashlib
 import json

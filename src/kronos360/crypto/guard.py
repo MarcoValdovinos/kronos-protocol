@@ -7,6 +7,8 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """Rate limiting y timeouts.
 
 Rate limiter: token bucket thread-safe, por proceso.
@@ -14,7 +16,6 @@ Timeout: SIGALRM en hilo principal. No-op en Windows o hilos secundarios.
 
 Creado por: Marco Antonio Rojas Valdovinos (#000)
 """
-from __future__ import annotations
 
 import signal
 import threading

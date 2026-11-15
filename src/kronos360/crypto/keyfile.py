@@ -7,6 +7,8 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """Cifrado de llaves privadas en reposo.
 
 Formato de archivo (JSON):
@@ -34,7 +36,6 @@ Uso:
 
 Creado por: Marco Antonio Rojas Valdovinos (#000)
 """
-from __future__ import annotations
 
 import json
 import os
