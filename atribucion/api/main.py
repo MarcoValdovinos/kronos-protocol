@@ -7,11 +7,12 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """
 Atribución — Servidor FastAPI.
 """
 
-from __future__ import annotations
 
 from contextlib import asynccontextmanager
 from typing import AsyncIterator

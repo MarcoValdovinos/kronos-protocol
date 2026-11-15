@@ -7,6 +7,8 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """
 Atribución Engine — Fallback Anthropic.
 
@@ -20,7 +22,6 @@ Uso:
     response = backend.generate("Hola")
 """
 
-from __future__ import annotations
 
 import logging
 import os

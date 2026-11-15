@@ -7,6 +7,8 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 #!/usr/bin/env python3
 """
 ═══════════════════════════════════════════════════════════════════════════
@@ -15,7 +17,6 @@
  NODO: YHDRYH-92CE · Enjambre de 12 agentes
 ═══════════════════════════════════════════════════════════════════════════
 """
-from __future__ import annotations
 import json
 from pathlib import Path
 

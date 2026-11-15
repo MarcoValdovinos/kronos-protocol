@@ -7,6 +7,8 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """
 Atribución — Endpoint de verificación de certificados.
 
@@ -21,7 +23,6 @@ Devuelve:
 - Prueba criptográfica (hashes, anclajes, sellos)
 """
 
-from __future__ import annotations
 
 import hashlib
 from datetime import datetime, timezone

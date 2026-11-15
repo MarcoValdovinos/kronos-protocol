@@ -7,6 +7,8 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """
 Atribución Robotics — Control de servos.
 
@@ -19,7 +21,6 @@ Uso:
     servos.smooth_move(1, from_angle=0, to_angle=180, duration_ms=500)
 """
 
-from __future__ import annotations
 
 import logging
 import time

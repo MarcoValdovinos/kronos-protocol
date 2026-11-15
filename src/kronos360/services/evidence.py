@@ -7,9 +7,10 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """Emision, verificacion y migracion con doble capa y domain separation."""
 
-from __future__ import annotations
 
 from collections.abc import Iterable
 from datetime import UTC, datetime

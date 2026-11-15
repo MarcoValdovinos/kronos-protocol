@@ -7,6 +7,8 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """
 Atribución — Base de los 9 robots guardianes.
 
@@ -17,7 +19,6 @@ Todos los guardianes heredan de GuardAgent y comparten:
 - Persistencia de estado
 """
 
-from __future__ import annotations
 
 import asyncio
 import json

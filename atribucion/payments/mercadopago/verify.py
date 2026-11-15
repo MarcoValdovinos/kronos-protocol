@@ -7,13 +7,14 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """
 Atribución Payments — Verificación de webhooks.
 
 Valida la firma HMAC-SHA256 de webhooks de Mercado Pago.
 """
 
-from __future__ import annotations
 
 import hashlib
 import hmac

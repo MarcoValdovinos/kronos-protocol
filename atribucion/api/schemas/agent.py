@@ -7,6 +7,8 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """
 Atribución — Esquemas Pydantic para registro de agentes.
 
@@ -18,7 +20,6 @@ Un cliente llama a este endpoint una vez por agente, y recibe
 el agent_id y el Contrato de Atribución asociado.
 """
 
-from __future__ import annotations
 
 from datetime import datetime
 from typing import Any, Literal

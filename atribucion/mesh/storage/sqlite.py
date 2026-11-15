@@ -7,6 +7,8 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """
 Atribución Mesh — Storage local con SQLite.
 
@@ -14,7 +16,6 @@ Persistencia local para el nodo. Sin dependencias externas
 (usa sqlite3 de la stdlib).
 """
 
-from __future__ import annotations
 
 import json
 import sqlite3

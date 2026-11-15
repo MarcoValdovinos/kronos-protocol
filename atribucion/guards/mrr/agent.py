@@ -7,6 +7,8 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """
 Atribución — Guardián MRR.
 
@@ -16,7 +18,6 @@ Monitoriza la salud del negocio:
 3. Detecta pagos fallidos.
 """
 
-from __future__ import annotations
 
 import json
 from datetime import datetime, timedelta, timezone

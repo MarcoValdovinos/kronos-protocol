@@ -7,6 +7,8 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """
 Atribución — Audit log middleware.
 
@@ -14,7 +16,6 @@ Registra cada request en un log inmutable (JSONL).
 Cumple con EU AI Act Art. 12 (registro automático de eventos).
 """
 
-from __future__ import annotations
 
 import json
 import time

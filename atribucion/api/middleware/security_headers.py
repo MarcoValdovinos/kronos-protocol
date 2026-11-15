@@ -7,6 +7,8 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """
 Atribución — Security headers middleware.
 
@@ -14,7 +16,6 @@ Añade headers de seguridad a cada respuesta.
 Cumple con OWASP Secure Headers Project.
 """
 
-from __future__ import annotations
 
 from fastapi import Request
 

@@ -7,6 +7,8 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """
 Atribución — Endpoint principal.
 
@@ -27,7 +29,6 @@ Por debajo:
 Cumple con EU AI Act Art. 12, 14, 22.
 """
 
-from __future__ import annotations
 
 import hashlib
 import sys

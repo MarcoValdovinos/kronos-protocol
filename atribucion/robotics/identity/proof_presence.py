@@ -7,6 +7,8 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """
 Atribución Robotics — Proof of Physical Presence.
 
@@ -20,7 +22,6 @@ Combina:
 - Prueba de sensor (IMU, cámara)
 """
 
-from __future__ import annotations
 
 import hashlib
 from dataclasses import dataclass, field

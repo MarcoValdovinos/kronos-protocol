@@ -7,13 +7,14 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """
 Atribución Payments — Webhooks de Mercado Pago.
 
 Receptor y procesador de notificaciones IPN/Webhooks.
 """
 
-from __future__ import annotations
 
 import json
 import logging

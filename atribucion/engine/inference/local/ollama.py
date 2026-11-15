@@ -7,6 +7,8 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """
 Atribución Engine — Backend Ollama.
 
@@ -23,7 +25,6 @@ Uso:
     response = backend.generate("Hola")
 """
 
-from __future__ import annotations
 
 import json
 import logging

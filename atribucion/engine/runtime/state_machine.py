@@ -7,6 +7,8 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """
 Atribución Engine — Máquina de estados del agente.
 
@@ -14,7 +16,6 @@ Define los estados canónicos de un agente y las transiciones válidas.
 Cada transición se persiste en disco para auditoría (EU AI Act Art. 12).
 """
 
-from __future__ import annotations
 
 import json
 from dataclasses import dataclass, field

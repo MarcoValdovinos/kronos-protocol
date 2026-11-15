@@ -7,6 +7,8 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """
 Atribución Engine — Cuantización de modelos.
 
@@ -31,7 +33,6 @@ Uso:
     quantizer.quantize("model.gguf", "model-q4.gguf", quant_type="Q4_K_M")
 """
 
-from __future__ import annotations
 
 import logging
 import os

@@ -7,6 +7,8 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """
 Atribución — Guardián NEXUS.
 
@@ -17,7 +19,6 @@ Verifica la conectividad con servicios externos:
 4. Mercado Pago.
 """
 
-from __future__ import annotations
 
 from pathlib import Path
 

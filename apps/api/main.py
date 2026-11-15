@@ -9,6 +9,7 @@
 
 from __future__ import annotations
 
+
 """API HTTP de KRONOS. Creado por Marco Antonio Rojas Valdovinos."""
 
 import base64

@@ -7,6 +7,8 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """
 Atribución Engine — Sandbox de ejecución.
 
@@ -33,7 +35,6 @@ Uso:
     print(result.success)  # True
 """
 
-from __future__ import annotations
 
 import ast
 import io

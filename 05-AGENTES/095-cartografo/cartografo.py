@@ -7,12 +7,13 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """095-cartografo: genera mapa ASCII del repo por niveles.
 
 ESTADO: 🟡 MVP
 """
 
-from __future__ import annotations
 
 import sys
 from pathlib import Path

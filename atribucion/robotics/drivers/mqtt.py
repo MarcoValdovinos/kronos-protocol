@@ -7,6 +7,8 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """
 Atribución Robotics — Driver MQTT.
 
@@ -19,7 +21,6 @@ Uso:
     driver.shutdown()
 """
 
-from __future__ import annotations
 
 import json
 import logging

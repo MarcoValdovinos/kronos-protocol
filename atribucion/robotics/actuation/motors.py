@@ -7,6 +7,8 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """
 Atribución Robotics — Control de motores.
 
@@ -19,7 +21,6 @@ Uso:
     motors.stop_all()
 """
 
-from __future__ import annotations
 
 import logging
 from dataclasses import dataclass, field

@@ -7,6 +7,8 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """
 Atribución — Runner de todos los guardianes.
 
@@ -16,7 +18,6 @@ Uso:
     python -m guards.runner
 """
 
-from __future__ import annotations
 
 import asyncio
 import logging

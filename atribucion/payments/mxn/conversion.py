@@ -7,13 +7,14 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """
 Atribución Payments — Conversión EUR ↔ MXN.
 
 Conversión de divisas con tasa cacheada.
 """
 
-from __future__ import annotations
 
 import logging
 from dataclasses import dataclass

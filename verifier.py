@@ -7,6 +7,8 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 #!/usr/bin/env python3
 """
 ═══════════════════════════════════════════════════════════════════════════
@@ -15,7 +17,6 @@
  Verificador maestro: ejecuta todos los checks del sistema.
 ═══════════════════════════════════════════════════════════════════════════
 """
-from __future__ import annotations
 import subprocess
 import sys
 from pathlib import Path

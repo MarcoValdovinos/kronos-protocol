@@ -7,6 +7,8 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """
 Atribución — Endpoint de registro de agentes.
 
@@ -20,7 +22,6 @@ Cumple con:
 - EU AI Act Art. 12 (trazabilidad), 14 (supervisión)
 """
 
-from __future__ import annotations
 
 import hashlib
 import sys

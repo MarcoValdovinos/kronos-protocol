@@ -7,6 +7,8 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """
 Atribución Engine — Router de inferencia.
 
@@ -31,7 +33,6 @@ Uso:
     response = router.generate("Hola")
 """
 
-from __future__ import annotations
 
 import logging
 import time

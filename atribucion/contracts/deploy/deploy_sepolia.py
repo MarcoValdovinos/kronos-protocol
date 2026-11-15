@@ -7,6 +7,8 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """
 Atribución — Deploy de AttributionRegistry a Sepolia.
 
@@ -18,7 +20,6 @@ Requiere en .env:
     SEPOLIA_PRIVATE_KEY=0x...
 """
 
-from __future__ import annotations
 
 import json
 import os

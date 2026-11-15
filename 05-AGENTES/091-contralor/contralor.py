@@ -7,12 +7,13 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """091-contralor: valida estructura de actas de la Mesa Directiva.
 
 ESTADO: 🔴 MAQUETA (falta Mesa Directiva)
 """
 
-from __future__ import annotations
 
 import re
 import sys

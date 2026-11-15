@@ -7,12 +7,13 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """094-bibliotecario: detecta duplicados y archivos basura.
 
 ESTADO: 🟡 MVP
 """
 
-from __future__ import annotations
 
 import hashlib
 import sys

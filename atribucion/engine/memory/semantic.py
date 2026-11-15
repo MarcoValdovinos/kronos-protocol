@@ -7,6 +7,8 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """
 Atribución Engine — Memoria semántica.
 
@@ -27,7 +29,6 @@ Uso:
     facts = mem.get_facts(limit=10)
 """
 
-from __future__ import annotations
 
 import hashlib
 import json

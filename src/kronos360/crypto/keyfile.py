@@ -9,6 +9,7 @@
 
 from __future__ import annotations
 
+
 """Cifrado de llaves privadas en reposo.
 
 Formato de archivo (JSON):

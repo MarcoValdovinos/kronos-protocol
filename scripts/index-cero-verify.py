@@ -7,6 +7,8 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 #!/usr/bin/env python3
 """
 ═══════════════════════════════════════════════════════════════════════════
@@ -15,7 +17,6 @@
  Verifica el Índice Cero: Safe Creative + SHA-256 + Ethereum + eIDAS.
 ═══════════════════════════════════════════════════════════════════════════
 """
-from __future__ import annotations
 import sys
 import json
 from pathlib import Path

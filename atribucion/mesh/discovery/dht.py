@@ -7,6 +7,8 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """
 Atribución Mesh — DHT (Distributed Hash Table).
 
@@ -18,7 +20,6 @@ Implementación simplificada del algoritmo Kademlia:
 - El routing se hace por k-buckets.
 """
 
-from __future__ import annotations
 
 import hashlib
 import logging

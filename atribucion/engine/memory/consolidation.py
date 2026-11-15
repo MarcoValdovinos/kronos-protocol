@@ -7,6 +7,8 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """
 Atribución Engine — Consolidación de memoria.
 
@@ -26,7 +28,6 @@ Uso:
     print(f"Consolidados: {result['facts_added']} hechos")
 """
 
-from __future__ import annotations
 
 import logging
 from collections import Counter

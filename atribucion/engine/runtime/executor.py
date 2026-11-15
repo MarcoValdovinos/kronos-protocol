@@ -7,13 +7,14 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """
 Atribución Engine — Executor.
 
 Ejecuta tareas del scheduler, llamando a las acciones registradas.
 """
 
-from __future__ import annotations
 
 import asyncio
 from collections.abc import Awaitable, Callable

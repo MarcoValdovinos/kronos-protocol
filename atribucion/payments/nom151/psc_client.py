@@ -7,6 +7,8 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """
 Atribución Payments — Cliente PSC (Prestador de Servicios de Certificación).
 
@@ -19,7 +21,6 @@ PSCs soportados:
 - JAAK
 """
 
-from __future__ import annotations
 
 import logging
 import os

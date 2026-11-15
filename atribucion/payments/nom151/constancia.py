@@ -7,13 +7,14 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """
 Atribución Payments — Constancias NOM-151.
 
 Genera y gestiona constancias de conservación.
 """
 
-from __future__ import annotations
 
 import hashlib
 import json

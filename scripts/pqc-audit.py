@@ -7,13 +7,14 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 #!/usr/bin/env python3
 """
 ═══════════════════════════════════════════════════════════════════════════
 ▓▒░ PQC AUDIT · ARKHÉ ZERO · ◯_● · 51/49/100 ░▒▓
 ═══════════════════════════════════════════════════════════════════════════
 """
-from __future__ import annotations
 import sys
 import re
 from pathlib import Path

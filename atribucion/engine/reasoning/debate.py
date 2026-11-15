@@ -7,6 +7,8 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """
 Atribución Engine — Debate multi-agente.
 
@@ -26,7 +28,6 @@ Uso:
     result = debate.run("¿Debo invertir en AAPL?", llm_call=...)
 """
 
-from __future__ import annotations
 
 import logging
 from dataclasses import asdict, dataclass, field

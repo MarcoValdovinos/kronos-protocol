@@ -7,6 +7,8 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """
 Atribución — Guardián SENTINEL.
 
@@ -16,7 +18,6 @@ Verifica el perímetro de seguridad:
 3. Detecta firmas inválidas repetidas.
 """
 
-from __future__ import annotations
 
 import json
 from collections import Counter

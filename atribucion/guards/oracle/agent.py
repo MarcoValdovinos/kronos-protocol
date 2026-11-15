@@ -7,6 +7,8 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """
 Atribución — Guardián ORACLE.
 
@@ -16,7 +18,6 @@ Verifica la consistencia de datos:
 3. Detecta contratos sin firmar.
 """
 
-from __future__ import annotations
 
 import json
 import re

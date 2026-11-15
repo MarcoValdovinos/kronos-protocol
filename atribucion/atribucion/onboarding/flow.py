@@ -7,6 +7,8 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """
 Atribución — Onboarding del cliente.
 
@@ -19,7 +21,6 @@ Flujo completo en 4 pasos:
 Cada paso es idempotente. El cliente puede reanudar donde lo dejó.
 """
 
-from __future__ import annotations
 
 import hashlib
 import secrets

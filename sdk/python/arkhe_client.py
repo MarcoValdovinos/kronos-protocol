@@ -7,12 +7,13 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """
 ═══════════════════════════════════════════════════════════════════════════
  ▓▒░ SDK · PYTHON CLIENT · ARKHÉ ZERO · ◯_● ░▒▓
 ═══════════════════════════════════════════════════════════════════════════
 """
-from __future__ import annotations
 import hashlib
 import httpx
 from typing import Optional

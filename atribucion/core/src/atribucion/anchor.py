@@ -7,6 +7,8 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """
 Atribución — Anclaje a Ethereum.
 
@@ -21,7 +23,6 @@ Cumple con:
 - RFC 3161 (complementario con sellado de tiempo)
 """
 
-from __future__ import annotations
 
 import hashlib
 import os

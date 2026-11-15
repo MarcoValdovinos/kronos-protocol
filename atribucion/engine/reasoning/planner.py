@@ -7,6 +7,8 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """
 Atribución Engine — Planner.
 
@@ -21,7 +23,6 @@ Uso:
     print(plan.to_dict())
 """
 
-from __future__ import annotations
 
 import logging
 from dataclasses import asdict, dataclass, field

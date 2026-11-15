@@ -7,6 +7,8 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """
 Atribución Engine — Tool Use.
 
@@ -29,7 +31,6 @@ Uso:
     result = registry.call("fetch_price", {"symbol": "AAPL"})
 """
 
-from __future__ import annotations
 
 import inspect
 import logging

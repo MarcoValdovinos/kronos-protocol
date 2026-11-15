@@ -7,12 +7,13 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """
 ═══════════════════════════════════════════════════════════════════════════
  ▓▒░ API · MIDDLEWARE · ARKHÉ ZERO · ◯_● ░▒▓
 ═══════════════════════════════════════════════════════════════════════════
 """
-from __future__ import annotations
 import time
 import hashlib
 from fastapi import Request, Response

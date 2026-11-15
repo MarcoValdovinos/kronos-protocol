@@ -7,12 +7,13 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """093-relator: cuenta archivos y genera reporte de estado.
 
 ESTADO: 🔴 MAQUETA (falta comparación con snapshot anterior)
 """
 
-from __future__ import annotations
 
 import sys
 from collections import Counter

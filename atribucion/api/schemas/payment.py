@@ -7,9 +7,10 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """Atribución — Esquemas de pago."""
 
-from __future__ import annotations
 
 from datetime import datetime
 from typing import Any, Literal

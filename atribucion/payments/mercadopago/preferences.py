@@ -7,13 +7,14 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """
 Atribución Payments — Preferencias de checkout.
 
 Crea preferencias para Checkout Pro.
 """
 
-from __future__ import annotations
 
 import logging
 from dataclasses import dataclass

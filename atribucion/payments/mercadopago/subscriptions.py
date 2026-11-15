@@ -7,13 +7,14 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """
 Atribución Payments — Suscripciones recurrentes.
 
 Maneja preapproval (suscripciones mensuales).
 """
 
-from __future__ import annotations
 
 import logging
 from dataclasses import dataclass

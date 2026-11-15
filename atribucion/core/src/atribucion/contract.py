@@ -7,6 +7,8 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """
 Atribución — Contrato de Atribución.
 
@@ -18,7 +20,6 @@ Cumple con:
 - EU AI Act Art. 12 (registro), 14 (supervisión), 22 (explicabilidad)
 """
 
-from __future__ import annotations
 
 import hashlib
 from dataclasses import dataclass, field

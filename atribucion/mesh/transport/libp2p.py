@@ -7,6 +7,8 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """
 Atribución Mesh — Nodo P2P.
 
@@ -17,7 +19,6 @@ Sin dependencias externas. Cuando esté disponible py-libp2p,
 se reemplaza la clase interna sin cambiar la API.
 """
 
-from __future__ import annotations
 
 import asyncio
 import json

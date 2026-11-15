@@ -7,6 +7,8 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """
 Atribución Robotics — Percepción visual.
 
@@ -19,7 +21,6 @@ Uso:
     vision.release()
 """
 
-from __future__ import annotations
 
 import logging
 from dataclasses import dataclass

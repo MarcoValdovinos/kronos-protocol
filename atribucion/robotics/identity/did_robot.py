@@ -7,6 +7,8 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """
 Atribución Robotics — DID del robot.
 
@@ -14,7 +16,6 @@ Crea un DID bajo el método kronos:robot, vinculado al hardware
 del robot mediante su fingerprint.
 """
 
-from __future__ import annotations
 
 import hashlib
 import sys

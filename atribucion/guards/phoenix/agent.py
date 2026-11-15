@@ -7,6 +7,8 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """
 Atribución — Guardián PHOENIX.
 
@@ -17,7 +19,6 @@ Verifica la resiliencia del sistema:
 4. Sugiere reintentos.
 """
 
-from __future__ import annotations
 
 import json
 import os

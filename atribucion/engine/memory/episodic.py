@@ -7,6 +7,8 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """
 Atribución Engine — Memoria episódica.
 
@@ -28,7 +30,6 @@ Uso:
     by_type = mem.get_by_type("action", limit=5)
 """
 
-from __future__ import annotations
 
 import hashlib
 import json

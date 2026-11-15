@@ -7,6 +7,8 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """
 Atribución Engine — Memoria procedural.
 
@@ -32,7 +34,6 @@ Uso:
     result = mem.execute_skill("trade_stock", handlers={...})
 """
 
-from __future__ import annotations
 
 import json
 import logging

@@ -9,6 +9,7 @@
 
 from __future__ import annotations
 
+
 """Firmas digitales con domain separation.
 
 Cada firma incluye un prefijo de dominio que liga el mensaje al protocolo,

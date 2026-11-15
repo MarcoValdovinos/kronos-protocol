@@ -7,6 +7,8 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """
 Atribución Engine — Chain of Thought (CoT).
 
@@ -25,7 +27,6 @@ Uso:
     print(result.steps)
 """
 
-from __future__ import annotations
 
 import logging
 import re

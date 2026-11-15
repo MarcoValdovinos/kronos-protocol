@@ -7,6 +7,8 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """
 Atribución — Deploy a Ethereum Mainnet.
 
@@ -16,7 +18,6 @@ Uso:
     python contracts/deploy/deploy_mainnet.py --confirm
 """
 
-from __future__ import annotations
 
 import argparse
 import json

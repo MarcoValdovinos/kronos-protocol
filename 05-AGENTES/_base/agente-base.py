@@ -7,6 +7,8 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """Clase base para todos los agentes Kintsugi.
 
 ESTADO: 🟡 MVP
@@ -30,7 +32,6 @@ Honestidad obligatoria:
   - Si un agente no aporta hoy, lo declara con `util_hoy = False`.
 """
 
-from __future__ import annotations
 
 import json
 import sys

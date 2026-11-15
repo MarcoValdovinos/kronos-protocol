@@ -7,9 +7,10 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """Atribución — Esquemas de KAF."""
 
-from __future__ import annotations
 
 from typing import Literal
 

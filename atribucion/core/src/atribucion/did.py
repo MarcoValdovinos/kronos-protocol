@@ -7,6 +7,8 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """
 Atribución — Identidad Descentralizada (DID).
 
@@ -16,7 +18,6 @@ Tipos soportados: agent, human, robot, org.
 Formato: did:kronos:<tipo>:0x<40_hex>
 """
 
-from __future__ import annotations
 
 import hashlib
 import re

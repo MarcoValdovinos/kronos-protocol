@@ -7,8 +7,9 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
-"""Clase base para todos los agentes Kintsugi."""
 from __future__ import annotations
+
+"""Clase base para todos los agentes Kintsugi."""
 
 import json
 import sys

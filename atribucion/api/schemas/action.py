@@ -7,6 +7,8 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """
 Atribución — Esquemas Pydantic del endpoint de acciones.
 
@@ -17,7 +19,6 @@ Define el contrato HTTP del producto:
 Cumple con EU AI Act Art. 12, 14, 22.
 """
 
-from __future__ import annotations
 
 from datetime import datetime
 from typing import Any, Literal

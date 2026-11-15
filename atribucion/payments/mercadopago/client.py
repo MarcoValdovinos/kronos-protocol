@@ -7,13 +7,14 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """
 Atribución Payments — Cliente base de Mercado Pago.
 
 Wrapper HTTP con retries, timeouts y logging.
 """
 
-from __future__ import annotations
 
 import logging
 import os

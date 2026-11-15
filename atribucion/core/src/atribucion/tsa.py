@@ -7,6 +7,8 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """
 Atribución — TSA (Time-Stamp Authority).
 
@@ -22,7 +24,6 @@ El sello de tiempo es legalmente reconocido en:
 - Internacional: RFC 3161
 """
 
-from __future__ import annotations
 
 import hashlib
 from dataclasses import dataclass

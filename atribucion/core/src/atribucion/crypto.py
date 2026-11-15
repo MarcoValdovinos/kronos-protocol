@@ -7,6 +7,8 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """
 Atribución — Core criptográfico.
 
@@ -20,7 +22,6 @@ La firma híbrida garantiza que un payload es válido solo si
 AMBOS algoritmos (clásico + post-cuántico) firman correctamente.
 """
 
-from __future__ import annotations
 
 import hashlib
 import json

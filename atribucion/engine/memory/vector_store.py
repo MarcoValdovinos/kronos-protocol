@@ -7,6 +7,8 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """
 Atribución Engine — Vector Store.
 
@@ -21,7 +23,6 @@ Uso:
     results = store.search("preferencias del usuario", top_k=5)
 """
 
-from __future__ import annotations
 
 import hashlib
 import json

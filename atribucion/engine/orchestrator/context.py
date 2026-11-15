@@ -7,6 +7,8 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """
 Atribución Engine — Contexto de orquestación.
 
@@ -32,7 +34,6 @@ Uso:
     print(ctx.to_prompt())
 """
 
-from __future__ import annotations
 
 import logging
 from dataclasses import asdict, dataclass, field

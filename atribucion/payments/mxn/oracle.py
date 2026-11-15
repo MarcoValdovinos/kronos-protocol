@@ -7,6 +7,8 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """
 Atribución Payments — Oráculo de tipo de cambio.
 
@@ -14,7 +16,6 @@ Obtiene tasa EUR/MXN desde Banxico o fallback.
 Cachea por 6 horas.
 """
 
-from __future__ import annotations
 
 import json
 import logging

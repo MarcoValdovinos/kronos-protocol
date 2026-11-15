@@ -7,6 +7,8 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """
 Atribución Robotics — Percepción LiDAR.
 
@@ -18,7 +20,6 @@ Uso:
     obstacles = lidar.detect_obstacles(ranges, threshold_m=1.0)
 """
 
-from __future__ import annotations
 
 import logging
 import math

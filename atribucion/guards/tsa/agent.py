@@ -7,6 +7,8 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """
 Atribución — Guardián TSA.
 
@@ -16,7 +18,6 @@ Verifica la integridad de los sellos de tiempo:
 3. Verifica formato de tokens.
 """
 
-from __future__ import annotations
 
 import json
 from datetime import datetime, timedelta, timezone

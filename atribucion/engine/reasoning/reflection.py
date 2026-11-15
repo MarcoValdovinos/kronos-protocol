@@ -7,6 +7,8 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """
 Atribución Engine — Reflection.
 
@@ -25,7 +27,6 @@ Uso:
     print(critique.lessons)
 """
 
-from __future__ import annotations
 
 import logging
 from dataclasses import asdict, dataclass, field

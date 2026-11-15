@@ -7,6 +7,8 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """
 Atribución — Rate limiting por tenant.
 
@@ -19,7 +21,6 @@ Sin dependencias externas: usa memoria con deque.
 En producción, reemplazar por Redis.
 """
 
-from __future__ import annotations
 
 import time
 from collections import defaultdict, deque

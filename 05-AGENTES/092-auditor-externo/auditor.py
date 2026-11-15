@@ -7,12 +7,13 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """092-auditor-externo: busca patrones peligrosos en el repo.
 
 ESTADO: 🟡 MVP
 """
 
-from __future__ import annotations
 
 import re
 import sys

@@ -7,6 +7,8 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 #!/usr/bin/env python3
 """
 ═══════════════════════════════════════════════════════════════════════════
@@ -15,7 +17,6 @@
  NODO: YHDRYH-92CE · Firma C2PA 2.1
 ═══════════════════════════════════════════════════════════════════════════
 """
-from __future__ import annotations
 import hashlib
 import sys
 from datetime import datetime

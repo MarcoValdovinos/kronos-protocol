@@ -7,6 +7,8 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """
 Atribución — Guardián VAULT.
 
@@ -16,7 +18,6 @@ Verifica la seguridad de claves y secretos:
 3. Detecta secretos en git history.
 """
 
-from __future__ import annotations
 
 import os
 import re

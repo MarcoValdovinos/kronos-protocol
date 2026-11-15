@@ -7,6 +7,8 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """Modelos de datos para registros de evidencia con doble capa de hash.
 
 Capa 1: payload_hash   -> huella del contenido unicamente.
@@ -14,7 +16,6 @@ Capa 2: hash_registro  -> huella del registro completo (incluye payload_hash
                           + metadatos). Es la que se firma.
 """
 
-from __future__ import annotations
 
 from dataclasses import dataclass, field
 

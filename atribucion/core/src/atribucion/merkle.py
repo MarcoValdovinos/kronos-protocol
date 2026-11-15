@@ -7,6 +7,8 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """
 Atribución — Merkle Trees.
 
@@ -20,7 +22,6 @@ Algoritmo:
 - Raíz: 32 bytes = 64 hex chars
 """
 
-from __future__ import annotations
 
 import hashlib
 from dataclasses import dataclass

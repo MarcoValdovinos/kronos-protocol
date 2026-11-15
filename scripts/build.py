@@ -7,6 +7,8 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 #!/usr/bin/env python3
 """
 ═══════════════════════════════════════════════════════════════════════════
@@ -15,7 +17,6 @@
  NODO: YHDRYH-92CE · GENESIS: K28-M05-MN01-YHDRYH-92CE
 ═══════════════════════════════════════════════════════════════════════════
 """
-from __future__ import annotations
 import subprocess
 import sys
 from pathlib import Path

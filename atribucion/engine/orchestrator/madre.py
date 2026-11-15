@@ -7,6 +7,8 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """
 Atribución Engine — MADRE.
 
@@ -32,7 +34,6 @@ Uso:
     # Handoff real: Codex propone → Claude refina → Gemini ejecuta.
 """
 
-from __future__ import annotations
 
 from collections.abc import Awaitable, Callable
 from dataclasses import dataclass, field

@@ -7,6 +7,8 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """
 Atribución — Repositorios de persistencia.
 
@@ -16,7 +18,6 @@ disponible, se reemplaza por SQLAlchemy sin cambiar la API.
 Los métodos son async porque en producción consultan la DB.
 """
 
-from __future__ import annotations
 
 import json
 from dataclasses import asdict, is_dataclass

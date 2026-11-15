@@ -7,6 +7,8 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """
 Atribución Engine — Graph Store.
 
@@ -25,7 +27,6 @@ Uso:
     neighbors = g.get_neighbors("user")
 """
 
-from __future__ import annotations
 
 import json
 import logging

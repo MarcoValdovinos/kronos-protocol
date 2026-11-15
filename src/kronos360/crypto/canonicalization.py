@@ -7,9 +7,10 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """Canonicalizacion determinista de JSON segun RFC 8785 (JCS)."""
 
-from __future__ import annotations
 
 import rfc8785
 

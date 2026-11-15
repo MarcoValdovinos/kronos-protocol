@@ -7,6 +7,8 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 #!/usr/bin/env python3
 """
 ═══════════════════════════════════════════════════════════════════════════
@@ -15,7 +17,6 @@
  NODO: YHDRYH-92CE · Difusión multiplataforma
 ═══════════════════════════════════════════════════════════════════════════
 """
-from __future__ import annotations
 import sys
 
 SEAL = "◯_● · 51/49/100"

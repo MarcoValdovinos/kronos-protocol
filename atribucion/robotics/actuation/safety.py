@@ -7,6 +7,8 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """
 Atribución Robotics — Control de seguridad.
 
@@ -21,7 +23,6 @@ Uso:
     safety.reset()
 """
 
-from __future__ import annotations
 
 import logging
 from dataclasses import dataclass, field

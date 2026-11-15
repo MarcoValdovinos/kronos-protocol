@@ -7,8 +7,9 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
-"""Validación de payloads HTTP sin dependencias externas."""
 from __future__ import annotations
+
+"""Validación de payloads HTTP sin dependencias externas."""
 
 import base64
 import binascii

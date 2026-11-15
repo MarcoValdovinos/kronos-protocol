@@ -7,6 +7,8 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """
 Atribución — Guardián SHA.
 
@@ -17,7 +19,6 @@ Verifica la integridad criptográfica de los certificados emitidos:
 4. Detecta gaps en la numeración.
 """
 
-from __future__ import annotations
 
 import hashlib
 import json

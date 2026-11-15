@@ -7,6 +7,8 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """
 Atribución Robotics — Identidad de hardware.
 
@@ -14,7 +16,6 @@ Vincula un DID a un chip físico (TPM, Secure Enclave).
 Genera un fingerprint determinístico del hardware.
 """
 
-from __future__ import annotations
 
 import hashlib
 import platform

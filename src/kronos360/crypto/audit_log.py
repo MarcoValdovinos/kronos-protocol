@@ -9,6 +9,7 @@
 
 from __future__ import annotations
 
+
 """Registro de auditoría estructurado en JSONL.
 
 Reglas de seguridad:

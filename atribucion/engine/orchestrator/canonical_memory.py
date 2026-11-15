@@ -7,6 +7,8 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """
 Atribución Engine — Memoria canónica de MADRE.
 
@@ -19,7 +21,6 @@ Cada mensaje en una sala MADRE se persiste con:
 La memoria es append-only. Nadie puede modificar el pasado.
 """
 
-from __future__ import annotations
 
 import hashlib
 import json

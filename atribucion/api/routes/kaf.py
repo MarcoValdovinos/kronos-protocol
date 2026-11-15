@@ -7,6 +7,8 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """
 Atribución — Endpoints de certificación KAF.
 
@@ -15,7 +17,6 @@ GET  /v1/kaf/verify/{cert_id}    → verificar certificado KAF (público)
 GET  /v1/kaf/levels              → listar niveles KAF
 """
 
-from __future__ import annotations
 
 import sys
 from pathlib import Path

@@ -7,13 +7,14 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """
 KAF — Emisión de certificados.
 
 Convierte un KAFAssessment en un certificado firmado y anclable.
 """
 
-from __future__ import annotations
 
 import hashlib
 import json

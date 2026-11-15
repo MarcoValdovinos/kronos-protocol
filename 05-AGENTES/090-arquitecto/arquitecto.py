@@ -7,12 +7,13 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """090-arquitecto: valida que las carpetas esperadas existan.
 
 ESTADO: 🟡 MVP
 """
 
-from __future__ import annotations
 
 import sys
 from pathlib import Path

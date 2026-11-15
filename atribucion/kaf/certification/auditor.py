@@ -7,6 +7,8 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """
 KAF — Auditor automático.
 
@@ -14,7 +16,6 @@ Evalúa un agente contra los 47 controles KAF y devuelve
 qué nivel de certificación alcanza.
 """
 
-from __future__ import annotations
 
 import json
 from dataclasses import dataclass, field

@@ -7,6 +7,8 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """
 Atribución Mesh — CRDT.
 
@@ -21,7 +23,6 @@ Implementa:
 - ORSet (Observed-Remove Set)
 """
 
-from __future__ import annotations
 
 import time
 from dataclasses import dataclass, field

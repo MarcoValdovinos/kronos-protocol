@@ -7,6 +7,8 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """
 Atribución Payments — Integración con MXNB.
 
@@ -14,7 +16,6 @@ MXNB es la stablecoin regulada de Bitso, anclada 1:1 al MXN.
 Permite pagos en pesos sin fricción bancaria.
 """
 
-from __future__ import annotations
 
 import logging
 import os

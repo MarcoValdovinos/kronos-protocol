@@ -7,6 +7,8 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """
 Atribución Engine — Backend llama.cpp.
 
@@ -24,7 +26,6 @@ Uso:
     backend.unload()
 """
 
-from __future__ import annotations
 
 import logging
 import os

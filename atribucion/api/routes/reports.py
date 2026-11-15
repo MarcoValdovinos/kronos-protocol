@@ -7,6 +7,8 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """
 Atribución — Endpoints de reportes.
 
@@ -14,7 +16,6 @@ GET /v1/reports/{yyyy-mm}       → informe mensual en JSON
 GET /v1/reports/{yyyy-mm}.pdf   → informe mensual en PDF
 """
 
-from __future__ import annotations
 
 import re
 from datetime import datetime, timezone

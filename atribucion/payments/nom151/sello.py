@@ -7,13 +7,14 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """
 Atribución Payments — Sellado de tiempo.
 
 Combina RFC 3161 + PSC para sellado legal en México.
 """
 
-from __future__ import annotations
 
 import logging
 from dataclasses import dataclass

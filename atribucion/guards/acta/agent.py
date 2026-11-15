@@ -7,6 +7,8 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """
 Atribución — Guardián ACTA.
 
@@ -17,7 +19,6 @@ Audita los logs del sistema:
 4. Verifica que no haya gaps en los logs.
 """
 
-from __future__ import annotations
 
 import json
 from collections import Counter

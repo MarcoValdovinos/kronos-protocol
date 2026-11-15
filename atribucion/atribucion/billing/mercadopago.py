@@ -7,6 +7,8 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """
 Atribución — Integración con Mercado Pago.
 
@@ -18,7 +20,6 @@ Implementa:
 Referencia: https://www.mercadopago.com.mx/developers
 """
 
-from __future__ import annotations
 
 import hashlib
 import hmac

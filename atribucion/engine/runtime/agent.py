@@ -7,6 +7,8 @@
   "El legado no se hereda. Se firma."
  ═══════════════════════════════════════════════════════"""
 
+from __future__ import annotations
+
 """
 Atribución Engine — Agent.
 
@@ -20,7 +22,6 @@ Ciclo de vida completo de un agente:
 Cada paso transita por la StateMachine.
 """
 
-from __future__ import annotations
 
 from dataclasses import dataclass, field
 from pathlib import Path
