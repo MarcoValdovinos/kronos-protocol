@@ -1,3 +1,12 @@
+/* ═══════════════════════════════════════════════════════
+ *  ◢◤◥◣   K R O N O S   ·   A R K H E   ·   Z E R O   ◥◣◢◤
+ *  ◯_●                                                 ◯_●
+ * 
+ *  [ 51% HUMANO ]  [ 49% IA ]  [ 100% REAL ]
+ * 
+ *  "El legado no se hereda. Se firma."
+ * ═══════════════════════════════════════════════════════ */
+
 // @ts-nocheck
 // ────────────────────────────────────────────────────────────
 // STORAGE DEXIE · Legado Humano–IA · v1.2
@@ -20,6 +29,15 @@ export class StorageDexie {
 
   // ── Inicialización y migraciones ──────────────────────────
   async init() {
+    // 🔗 Verificación de la cadena de hashes al arrancar (Issue #4)
+    const logs = await this.db.log.toArray();
+    logs.sort((a, b) => a.indice - b.indice);
+    for (let i = 1; i < logs.length; i++) {
+      if (logs[i].hash_previo !== logs[i - 1].hash_entrada) {
+        throw new Error("LOG ROTO en entrada " + i);
+      }
+    }
+
     if (this.inicializado) return this.db;
     if (!this.core || !this.core.inicializado) {
       throw new Error('Cripto Core debe estar inicializado antes de Storage Dexie.');
